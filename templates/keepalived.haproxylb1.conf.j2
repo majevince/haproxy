@@ -10,7 +10,7 @@ vrrp_instance LB_VIP {
     virtual_router_id 51
     priority 101 # 101 on haproxylb1, 100 on haproxylb2
     virtual_ipaddress {
-        192.168.56.200 # virtual ip address
+        192.168.56.170 # virtual ip address
       }
     track_script {
        chk_haproxy

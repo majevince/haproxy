@@ -14,11 +14,11 @@
           {{ item.ip }} {{ item.name }}
         marker: "# {mark} ANSIBLE MANAGED BLOCK {{ item.name }}"
       loop:
-        - { name: webserver1, ip: 192.168.56.197 }
-        - { name: webserver2, ip: 192.168.56.193 }
-        - { name: webserver3, ip: 192.168.56.192 }
-        - { name: haproxylb1, ip: 192.168.56.199 }
-        - { name: haproxylb2, ip: 192.168.56.198 }
+        - { name: webserver1, ip: 192.168.56.201 }
+        - { name: webserver2, ip: 192.168.56.202 }
+        - { name: webserver3, ip: 192.168.56.204 }
+        - { name: haproxylb1, ip: 192.168.56.141 }
+        - { name: haproxylb2, ip: 192.168.56.142 }
 
     - name: All servers should have EPEL
       dnf:
